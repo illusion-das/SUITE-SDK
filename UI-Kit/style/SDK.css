@@ -27,8 +27,8 @@ control-area {
     width: 440px;
     background: #edededbf;
     border: 2px solid #ffffff40;
-    border-top-left-radius: 25px;
-    border-bottom-left-radius: 25px;
+    border-top-left-radius: 30px;
+    border-bottom-left-radius: 30px;
     backdrop-filter: blur(32px);
     -webkit-backdrop-filter: blur(32px);
     filter: drop-shadow(-4px 0px 32px #0000003f);
@@ -149,4 +149,38 @@ header-text {
     font-weight: 700;
     color: #191F28;
     white-space: nowrap;
+}
+
+back-button {
+    position: absolute;
+    width: 128px;
+    height: 40%;
+    margin-left: 18px;
+    display: flex;
+    flex-direction: row;
+    top: 50%;
+    transform: translateY(-50%);
+    opacity: 0.7;
+    transition: 0.15s ease-in-out;
+}
+
+back-button:hover {
+    opacity: 1.0;
+}
+
+back-button-icon {
+    background-image: url(../assets/back_button.png);
+    background-size: 20px 28px;
+    background-repeat: no-repeat;
+    width: 20px;
+    height: 28px;
+    border-radius: 50%;
+}
+
+back-button-label {
+    margin-left: 10px;
+    font-size: 20px;
+    font-weight: 600;
+    margin-top: 1px;
+    color: #0e4aff;
 }
