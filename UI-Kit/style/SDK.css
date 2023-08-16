@@ -170,9 +170,9 @@ back-button:hover {
 
 back-button-icon {
     background-image: url(../assets/back_button.png);
-    background-size: 20px 28px;
+    background-size: 17px 28px;
     background-repeat: no-repeat;
-    width: 20px;
+    width: 17px;
     height: 28px;
     border-radius: 50%;
 }
