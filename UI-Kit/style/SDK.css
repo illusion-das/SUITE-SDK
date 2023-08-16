@@ -1,0 +1,32 @@
+
+html,
+body {
+    background: #FFF;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+}
+
+app-layout {
+    position: absolute;
+    display: flex;
+    flex-direction: row;
+
+    width: 1280px;
+    height: 480px;
+}
+
+control-area,
+content-area {
+    height: 100%;
+}
+
+control-area {
+    width: 530px;
+    background: red;
+}
+
+content-area {
+    width: 750px;
+    background: blue;
+}
