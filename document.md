@@ -186,3 +186,60 @@ SUITE-UI에서는 컨트롤 영역에서 상단과 중단으로 컨트롤 영역
 
 <br>
 
+# 다이얼로그 스크립트
+다이얼로그를 발생하기 위해서는 `SDK.js`에 포함되어 있는 `alert_create()` 함수를 사용합니다.
+
+- `alert_create()` 함수는 아래와 같은 구조입니다.
+```js
+alert_create(
+    <String:DialogID>,
+    <String:DialogTitle>,
+    <String:DialogMessage>,
+    <Int:ButtonIndex>,
+    <String[Array]:[ButtonText, ButtonType]>,
+    <String[Array]:[FunctionName, FunctionParameter]>
+)
+```
+
+<br>
+
+- 만약에 단일 버튼 알람을 만든다면, 아래와 같이 작성해봅니다.
+```js
+alert_create(
+    'alert001',
+    '알람 제목',
+    '알람 내용',
+    1,
+    ['버튼', 'primary'],
+    ['', '']
+)
+```
+
+<br>
+
+- 만약에 2개의 버튼이 있는 알람을 만든다면, 아래와 같이 작성합니다.
+```js
+alert_create(
+    'alert002',
+    '알람 제목',
+    '알람 내용',
+    2,
+    [['버튼1', 'primary'], ['버튼2', 'secondary']],
+    [['', ''], ['', '']]
+)
+```
+
+<br>
+
+알람 창을 닫기 위해서는 `alert_close()` 함수를 사용합니다.
+- 닫을 알림 창의 id를 파라미터로 입력합니다.
+```js
+alert_close(<String:DialogID>)
+```
+
+<br>
+
+- 위에서 선언한 단일 버튼 알림창을 제거한다면, 아래와 같이 작성합니다.
+```js
+alert_close('alert001')
+```
