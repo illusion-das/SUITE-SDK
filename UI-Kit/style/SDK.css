@@ -60,6 +60,13 @@ middle-control {
     flex-direction: column;
 }
 
+row-area {
+    width: 100%;
+    height: 100%;
+    display: flex;
+    flex-direction: row;
+}
+
 full-control {
     height: 97%;
     margin-bottom: 3%;
