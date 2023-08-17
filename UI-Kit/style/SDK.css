@@ -31,10 +31,11 @@ control-area {
     border-bottom-left-radius: 30px;
     backdrop-filter: blur(32px);
     -webkit-backdrop-filter: blur(32px);
-    filter: drop-shadow(-4px 0px 32px #0000003f);
-    -webkit-filter: drop-shadow(-4px 0px 32px #0000003f);
+    filter: drop-shadow(-4px 0px 32px #00000030);
+    -webkit-filter: drop-shadow(-4px 0px 32px #00000030);
     display: flex;
     flex-direction: column;
+    transition: 0.4s ease-out;
 }
 
 content-area {
@@ -236,11 +237,11 @@ alert-dialog {
     position: absolute;
     width: 100%;
     height: 100%;
-    background: #0000009a;
-    backdrop-filter: blur(8px);
+    background: #000000a0;
+    backdrop-filter: blur(16px);
     z-index: 10;
     opacity: 0.0;
-    transition: 0.2s ease-in-out;
+    transition: 0.2s ease-in;
 }
 
 .opacity-1 {
@@ -258,17 +259,20 @@ dialog-area {
     border-top-left-radius: 30px;
     border-bottom-left-radius: 30px;
     backdrop-filter: blur(82px);
-    filter: drop-shadow(-4px 0px 32px #0000004a);
+    filter: drop-shadow(-4px 0px 32px #0000004a) blur(32px);
     display: flex;
     flex-direction: column;
     margin-right: -440px;
     opacity: 0.0;
-    transition: 0.2s ease-in-out;
+    transition: 0.4s ease-out;
+    transform: scale(125%);
 }
 
 .margin-r0 {
+    filter: drop-shadow(-4px 0px 32px #0000004a) blur(0px);
     opacity: 1.0;
     margin-right: 0px;
+    transform: scale(100%);
 }
 
 dialog-content {
@@ -294,4 +298,8 @@ dialog-text {
     font-size: 24px;
     font-weight: 600;
     color: #191F28;
+}
+
+.control-back {
+    transform: translateX(75%) scale(90%);
 }

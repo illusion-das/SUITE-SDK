@@ -62,12 +62,14 @@ function alert_create(
   setTimeout(() => {
     document.querySelector("alert-dialog").classList.add("opacity-1");
     document.querySelector("dialog-area").classList.add("margin-r0");
+    document.querySelector("control-area").classList.add("control-back");
   }, 5);
 }
 
 function alert_close(alert_id) {
   document.querySelector("alert-dialog").classList.remove("opacity-1");
   document.querySelector("dialog-area").classList.remove("margin-r0");
+  document.querySelector("control-area").classList.remove("control-back");
 
   setTimeout(() => {
     document.getElementById(alert_id).remove();
