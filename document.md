@@ -243,3 +243,56 @@ alert_close(<String:DialogID>);
 ```js
 alert_close('alert001');
 ```
+
+<br> 
+
+# 이벤트 스크립팅
+버튼을 눌렀을 때 사용할 이벤트 및 함수를 사용하는 방법입니다.<br><br>
+
+- 아래와 같이 이벤트를 사용할 버튼에 `onclick`으로 감지합니다.
+```html
+<primary-button
+    onclick=<ANY:FUNCTION>
+>
+    <button-label>이벤트 호출</button-label>
+</primary-button>
+```
+
+<br>
+
+# 버튼 레이아웃 `margin` 구성
+2버튼 레이아웃 혹은 1버튼 레이아웃을 사용하게 될 때,
+주변 요소와 자연스럽게 상호작용 될려면, `margin`을 사용해야합니다.
+<br><br>
+
+- 1버튼에서 버튼 레이아웃 `margin` 적용
+```html
+<margin-button-l>
+    <margin-button-r>
+        <primary-button>
+            <button-label>버튼 1</button-label>
+        </primary-button>
+    </margin-button-r>
+</margin-button-l>
+```
+
+<br>
+
+- 2버튼에서 버튼 레이아웃 `margin` 적용
+```html
+<margin-button-l>
+    <primary-button>
+        <button-label>버튼 1</button-label>
+    </primary-button>
+</margin-button-l>
+
+<margin-button-r>
+    <secondary-button>
+        <button-label>버튼 2</button-label>
+    </secondary-button>
+</margin-button-r>
+```
+
+<br>
+
+`margin`의 적용은 왼쪽 버튼에는 `<margin-button-l>` 태그를 사용하고, 오른쪽 버튼에는 `<margin-button-r>` 태그를 사용합니다.
