@@ -1,6 +1,8 @@
 
 const app_layout = document.querySelector("app-layout");
 
+window.addEventListener("contextmenu", e => e.preventDefault());
+
 function alert_create(
   alert_id,
   alert_title,
