@@ -10,3 +10,10 @@
 
 ---
 
+<br>
+
+<div align="center">
+
+**[공식 문서](./document.md)** 를 참고하여 앱을 제작해보세요.
+
+</div>
