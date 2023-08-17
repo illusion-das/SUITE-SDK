@@ -37,13 +37,13 @@
 
       <middle-control>
         
-        <layout-split>
+        <layout-split-7>
           <layout-center>
             <header-text>어때요, 쉽죠?</header-text>
           </layout-center>
-        </layout-split>
+        </layout-split-7>
 
-        <layout-split>
+        <layout-split-4>
           <row-split>
 
             <margin-button-l>
@@ -51,17 +51,29 @@
                 <button-label>넹 쉬워요</button-label>
               </primary-button>
             </margin-button-l>
+
           </row-split>
 
           <row-split>
+
             <margin-button-r>
-              <secondary-button>
+              <secondary-button
+                onclick="
+                  alert_create(
+                    'alert_id_001',
+                    '헉! 어렵나요?',
+                    '공식 문서를 참고해서,<br>어플리케이션 제작을 해보세요!',
+                    2,
+                    [['공식 문서', 'primary'], ['알겠어요,', 'secondary']],
+                    [['', ''], ['alert_close', '`alert_id_001`']]);
+              ">
                 <button-label>아뇽 어려운디;;</button-label>
               </secondary-button>
             </margin-button-r>
+
           </row-split>
-          
-        </layout-split>
+
+        </layout-split-4>
 
       </middle-control>
 
