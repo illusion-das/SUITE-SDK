@@ -198,7 +198,7 @@ alert_create(
     <Int:ButtonIndex>,
     <String[Array]:[ButtonText, ButtonType]>,
     <String[Array]:[FunctionName, FunctionParameter]>
-)
+);
 ```
 
 <br>
@@ -212,7 +212,7 @@ alert_create(
     1,
     ['버튼', 'primary'],
     ['', '']
-)
+);
 ```
 
 <br>
@@ -226,7 +226,7 @@ alert_create(
     2,
     [['버튼1', 'primary'], ['버튼2', 'secondary']],
     [['', ''], ['', '']]
-)
+);
 ```
 
 <br>
@@ -234,12 +234,12 @@ alert_create(
 알람 창을 닫기 위해서는 `alert_close()` 함수를 사용합니다.
 - 닫을 알림 창의 id를 파라미터로 입력합니다.
 ```js
-alert_close(<String:DialogID>)
+alert_close(<String:DialogID>);
 ```
 
 <br>
 
 - 위에서 선언한 단일 버튼 알림창을 제거한다면, 아래와 같이 작성합니다.
 ```js
-alert_close('alert001')
+alert_close('alert001');
 ```
