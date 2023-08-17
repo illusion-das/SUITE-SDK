@@ -80,7 +80,7 @@ HTML 파일을 가져와 렌더링하거나, 서버를 구동하여, 브라우�
 
 <br>
 
-# 비율로 레이아웃 나누기
+# 상/하 비율로 레이아웃 나누기
 버튼 조작 부를 상/하로 나뉘어보겠습니다.<br>
 이 경우에는 `<layout-split>`을 사용합니다.<br>
 `<layout-split>`에는 각각 8, 7, 6, 4, 3, 2 비율이 존재하며,
@@ -89,15 +89,36 @@ HTML 파일을 가져와 렌더링하거나, 서버를 구동하여, 브라우�
 
 - 아래는 레이아웃을 절반으로 나누고, 버튼을 2개 배치합니다.
 ```html
-<app-layout>
+<control-area>
 
-    <content-area>
-        <layout-center>
-            <header-text>Hello, World!</header-text>
-        </layout-center>
-    </content-area>
+    <layout-split>
+        <primary-button>
+            <button-label>반가워요!</button-label>
+        </primary-button>
+    </layout-split>
 
-    <control-area>
+    <layout-split>
+        <secondary-button>
+            <button-label>안녕하세요!</button-label>
+        </secondary-button>
+    </layout-split>
+
+</control-area>
+```
+
+<br>
+
+# SUITE-UI 표준 레이아웃
+SUITE-UI에서는 컨트롤 영역에서 상단과 중단으로 컨트롤 영역을 나눕니다.<br>
+상단에는 대부분의 시스템 요소가 삽입됩니다. 상단과 중단을 나누는 태그는 각각 `<top-control>`과 `<middle-control>` 입니다.<br><br>
+
+* 아래는 표준 레이아웃에 맞게 재배치합니다.
+```html
+<control-area>
+
+    <top-control></top-control>
+
+    <middle-control>
 
         <layout-split>
             <primary-button>
@@ -111,48 +132,54 @@ HTML 파일을 가져와 렌더링하거나, 서버를 구동하여, 브라우�
             </secondary-button>
         </layout-split>
 
-    </control-area>
+    </middle-control>
 
-</app-layout>
+</control-area>
 ```
 
 <br>
 
-# SUITE-UI 표준 레이아웃
-SUITE-UI에서는 컨트롤 영역에서 상단과 중단으로 컨트롤 영역을 나눕니다.<br>
-상단에는 대부분의 시스템 요소가 삽입됩니다. 상단과 중단을 나누는 태그는 각각 `<top-control>`과 `<middle-control>` 입니다.<br><br>
+# 좌/우로 레이아웃 나누기
+레이아웃을 좌/우로 나눠야한다면, `<row-split>` 태그를 사용하여 나눌 수 있습니다.
 
-* 아래는 표준 레이아웃에 맞게 재배치합니다.
+- 아래는 버튼을 좌/우로 다시 나눕니다.
 ```html
-<app-layout>
+<control-area>
 
-    <content-area>
-        <layout-center>
-            <header-text>Hello, World!</header-text>
-        </layout-center>
-    </content-area>
+    <top-control></top-control>
 
-    <control-area>
+    <middle-control>
 
-        <top-control></top-control>
-
-        <middle-control>
-
-            <layout-split>
+        <row-area>
+            <row-split>
                 <primary-button>
                     <button-label>반가워요!</button-label>
                 </primary-button>
-            </layout-split>
+            </row-split>
 
-            <layout-split>
+            <row-split>
                 <secondary-button>
                     <button-label>안녕하세요!</button-label>
                 </secondary-button>
-            </layout-split>
+            </row-split>
+        </row-area>
 
-        </middle-control>
+    </middle-control>
 
-    </control-area>
+</control-area>
+```
 
-</app-layout>
+<br>
+
+# 뒤로가기 인터렉션
+앱을 나가는 버튼을 추가해보겠습니다.
+
+- 아래는 앱을 나가는 버튼을 쉽게 만들어주는 태그입니다.
+```html
+<top-control>
+    <back-button>
+        <back-button-icon></back-button-icon>
+        <back-button-label>나가기</back-button-label>
+    </back-button>
+</top-control>
 ```
