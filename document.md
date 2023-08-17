@@ -26,9 +26,11 @@ HTML 파일을 가져와 렌더링하거나, 서버를 구동하여, 브라우�
 - 아래는 Hello, World를 디스플레이 가운데에 배치하는 코드입니다.
 ```html
 <app-layout>
+
     <layout-center>
         <header-text>Hello, World!</header-text>
     </layout-center>
+
 </app-layout>
 ```
 
@@ -43,14 +45,17 @@ HTML 파일을 가져와 렌더링하거나, 서버를 구동하여, 브라우�
 버튼 하나를 배치합니다.
 ```html
 <app-layout>
+
     <content-area>
         <layout-center>
             <header-text>Hello, World!</header-text>
         </layout-center>
     </content-area>
+
     <control-area>
         <primary-button></primary-button>
     </control-area>
+
 </app-layout>
 ```
 
@@ -85,22 +90,69 @@ HTML 파일을 가져와 렌더링하거나, 서버를 구동하여, 브라우�
 - 아래는 레이아웃을 절반으로 나누고, 버튼을 2개 배치합니다.
 ```html
 <app-layout>
+
     <content-area>
         <layout-center>
             <header-text>Hello, World!</header-text>
         </layout-center>
     </content-area>
+
     <control-area>
+
         <layout-split>
             <primary-button>
                 <button-label>반가워요!</button-label>
             </primary-button>
         </layout-split>
+
         <layout-split>
             <secondary-button>
                 <button-label>안녕하세요!</button-label>
             </secondary-button>
         </layout-split>
+
     </control-area>
+
+</app-layout>
+```
+
+<br>
+
+# SUITE-UI 표준 레이아웃
+SUITE-UI에서는 컨트롤 영역에서 상단과 중단으로 컨트롤 영역을 나눕니다.<br>
+상단에는 대부분의 시스템 요소가 삽입됩니다. 상단과 중단을 나누는 태그는 각각 `<top-control>`과 `<middle-control>` 입니다.<br><br>
+
+* 아래는 표준 레이아웃에 맞게 재배치합니다.
+```html
+<app-layout>
+
+    <content-area>
+        <layout-center>
+            <header-text>Hello, World!</header-text>
+        </layout-center>
+    </content-area>
+
+    <control-area>
+
+        <top-control></top-control>
+
+        <middle-control>
+
+            <layout-split>
+                <primary-button>
+                    <button-label>반가워요!</button-label>
+                </primary-button>
+            </layout-split>
+
+            <layout-split>
+                <secondary-button>
+                    <button-label>안녕하세요!</button-label>
+                </secondary-button>
+            </layout-split>
+
+        </middle-control>
+
+    </control-area>
+
 </app-layout>
 ```
