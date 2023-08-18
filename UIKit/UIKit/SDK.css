@@ -218,7 +218,7 @@ back-button:hover {
 }
 
 back-button-icon {
-    background-image: url(../assets/back_button.png);
+    background-image: url(./assets/back_button.png);
     background-size: 17px 28px;
     background-repeat: no-repeat;
     width: 17px;
