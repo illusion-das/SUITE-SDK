@@ -3,8 +3,8 @@
 
 <img src="./res/SDK.png" width="128px"><br>
 
-### **SUITE-UI / SDK**
-**SUITE UI**를 사용해서 **SUITE**에 쉽게 앱을 제작해보세요!
+### **SUITE : Software Development Kit**
+SUITE 전용 SDK를 사용해서, 쉽게 앱을 제작하고 배포하세요.
 
 </div>
 
