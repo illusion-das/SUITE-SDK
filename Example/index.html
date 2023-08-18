@@ -16,7 +16,7 @@
 
     <content-area>
       <layout-center>
-        <header-text>
+        <header-text id="count">
           0
         </header-text>
       </layout-center>
@@ -24,20 +24,13 @@
 
     <control-area>
 
-      <top-control>
-        <back-button>
-          <back-button-icon></back-button-icon>
-          <back-button-label>뒤로가기</back-button-label>
-        </back-button>
-      </top-control>
-
-      <middle-control>
+      <full-control>
 
         <layout-split>
 
             <margin-button-l>
               <margin-button-r>
-                <primary-button>
+                <primary-button onclick="count_up()">
                   <button-label>카운트!</button-label>
                 </primary-button>
               </margin-button-r>
@@ -48,7 +41,7 @@
 
             <margin-button-l>
               <margin-button-r>
-                <secondary-button>
+                <secondary-button onclick="count_reset()">
                   <button-label>초기화</button-label>
                 </secondary-button>
               </margin-button-r>
@@ -56,13 +49,14 @@
 
         </layout-split>
 
-      </middle-control>
+      </full-control>
 
     </control-area>
     
   </app-layout>
 
   <script src="../UIKit/SDK.js"></script>
+  <script src="./counter.js"></script>
 
 </body>
 
