@@ -296,3 +296,47 @@ alert_close('alert001');
 <br>
 
 `margin`의 적용은 왼쪽 버튼에는 `<margin-button-l>` 태그를 사용하고, 오른쪽 버튼에는 `<margin-button-r>` 태그를 사용합니다.
+
+<br>
+
+# 텍스트 정렬 클래스
+클래스를 사용하여 텍스트 정렬을 쉽게 변경 할 수 있습니다.
+
+- 우선, `<content-area>`의 내용을 아래와 같이 변경합니다.
+```html
+<content-area>
+    <layout-center>
+        <header-text>임의로 이렇게<br>두 줄의 텍스트를 작성합니다.</header-text>
+    </layout-center>
+</content-area>
+```
+
+<br>
+
+- `<header-text>` 태그에 `read-center` 클래스를 추가합니다.
+```html
+<header-text class="read-center">임의로 이렇게<br>두 줄의 텍스트를 작성합니다.</header-text>
+```
+
+이제 텍스트는 가운데로 정렬 될 것 입니다.
+
+<br>
+
+- `<header-text>` 태그에 `read-right` 클래스를 추가합니다.
+```html
+<header-text class="read-right">임의로 이렇게<br>두 줄의 텍스트를 작성합니다.</header-text>
+```
+
+이제 텍스트는 오른쪽으로 정렬 될 것 입니다.
+
+<br>
+
+- `<header-text>` 태그에 `read-left` 클래스를 추가합니다.
+```html
+<header-text class="read-left">임의로 이렇게<br>두 줄의 텍스트를 작성합니다.</header-text>
+```
+
+이제 텍스트는 왼쪽으로 정렬 될 것 입니다.
+
+<br>
+

@@ -303,3 +303,15 @@ dialog-text {
 .control-back {
     transform: translateX(100%) scale(75%);
 }
+
+.read-left {
+    text-align: left;
+}
+
+.read-center {
+    text-align: center;
+}
+
+.read-right {
+    text-align: right;
+}
