@@ -1,0 +1,35 @@
+app-layout {
+    position: absolute;
+    display: flex;
+    flex-direction: row;
+
+    width: 1280px;
+    height: 480px;
+}
+
+control-area,
+content-area {
+    height: 100%;
+    overflow: hidden;
+}
+
+control-area {
+    width: 440px;
+    background: #edededbf;
+    border: 2px solid #ffffff40;
+    border-top-left-radius: 30px;
+    border-bottom-left-radius: 30px;
+    backdrop-filter: blur(32px);
+    -webkit-backdrop-filter: blur(32px);
+    filter: drop-shadow(-4px 0px 32px #00000030);
+    -webkit-filter: drop-shadow(-4px 0px 32px #00000030);
+    display: flex;
+    flex-direction: column;
+    transition: 0.4s ease-out;
+}
+
+content-area {
+    position: relative;
+    width: 840px;
+    background: #FFF;
+}

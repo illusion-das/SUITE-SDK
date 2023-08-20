@@ -1,0 +1,58 @@
+layout-split-1,
+layout-split-2,
+layout-split-3,
+layout-split-4,
+layout-split-5,
+layout-split-6,
+layout-split-7,
+layout-split-8,
+layout-split-9 {
+    position: relative;
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+}
+
+layout-split-1 {
+    height: 10%;
+}
+
+layout-split-2 {
+    height: 20%;
+}
+
+layout-split-3 {
+    height: 30%;
+}
+
+layout-split-4 {
+    height: 40%;
+}
+
+layout-split-5 {
+    height: 50%;
+}
+
+layout-split-6 {
+    height: 60%;
+}
+
+layout-split-7 {
+    height: 70%;
+}
+
+layout-split-8 {
+    height: 80%;
+}
+
+layout-split-9 {
+    height: 90%;
+}
+
+row-split {
+    position: relative;
+    width: 50%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+}

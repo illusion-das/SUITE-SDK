@@ -1,0 +1,23 @@
+top-control,
+middle-control {
+    position: relative;
+    width: 100%;
+}
+
+top-control {
+    height: 20%;
+}
+
+middle-control {
+    height: 87%;
+    margin-bottom: 3%;
+    display: flex;
+    flex-direction: column;
+}
+
+full-control {
+    height: 97%;
+    margin-bottom: 3%;
+    display: flex;
+    flex-direction: column;
+}

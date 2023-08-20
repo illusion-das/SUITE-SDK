@@ -1,0 +1,14 @@
+
+@font-face {
+    font-family: 'SUITE Variable';
+    src: url(./Fonts/SUITE-Variable.woff2);
+}
+
+html,
+body {
+    background: #FFF;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+    font-family: 'SUITE Variable', sans-serif;
+}
